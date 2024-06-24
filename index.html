@@ -21,14 +21,36 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/Marcos.JPG">
+    <style>
+        .social-icons svg {
+            margin-right: 15px;
+        }
+
+        .dev-icons svg {
+            margin-right: 15px;
+        }
+
+        .text-success {
+            color: #198754 !important;
+        }
+
+        .fw-bold {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="pos-f-t">
+        <div class="pos-f-t fixed-top">
+            <nav class="navbar navbar-dark bg-dark">
+                <h4 class="text-white">SOFTWARE ENGINEERING TECHNICIAN</h4>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
             <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h4 class="text-white">Collapsed content</h4>
-                    <div class="d-flex mt-3">
+                <div class="bg-dark p-2">
+                    <div class="d-flex mt-1">
                         <a class="text-white me-3" href="#about">Sobre mi</a>
                         <a class="text-white me-3" href="#experience">Experiencia</a>
                         <a class="text-white me-3" href="#skills">Habilidades</a>
@@ -36,11 +58,6 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
         </div>   
     </header>
 
@@ -66,7 +83,7 @@
                     <br>
                     <a href="mailto:marcosdevargas946@gmail.com">MARCOSDEVARGAS946@GMAIL.COM (PERSONAL)</a>
                     <br>
-                    <a href="mailto:marcosvargas0102e@hotmail.com">MARCOSVARGAS0102e@HOTMAIL.COM (Software Engineering Technician)</a>
+                    <a href="mailto:marcosvargas0102e@hotmail.com">MARCOSVARGAS0102e@HOTMAIL.COM (SOFTWARE ENGINEERING TECHNICIAN)</a>
                 </div>
                 <p class="lead mb-5">Experiencia en desarrollo de proyectos tecnológicos, trabajando en las diferentes etapas desde el análisis, diseño, desarrollo e implementación de soluciones viables.</p>
                 <div class="social-icons">
@@ -178,7 +195,10 @@
                         <img src="img/efcore.png" width="70" height="50" alt="">
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-node-js"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                            <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+                            <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3z"/>
+                        </svg>
                     </li>
                     <li class="list-inline-item">
                         <i class="fab fa-vuejs"></i>
@@ -235,6 +255,7 @@
             </div>
         </section>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script>
