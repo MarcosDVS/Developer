@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos De Vargas S.</title>
-    <HeadOutlet @rendermode="InteractiveServer" />
     
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-    crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link rel="icon" type="image/png" href="img/Marcos3.jpg">
+    <!-- Custom styles -->
+    <style>
+        :root {
+            --bs-body-bg: #111827;
+            --bs-body-color: #e5e7eb;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #111827, #1f2937);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,14 +32,14 @@
             </nav>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-2 row">
-                    <div class="d-flex mt-1 lead">
-                        <a class="text-white me-3" href="index.html">SOBRE MI</a>
-                        <a class="text-white me-3" href="#toro">TORO</a>
-                        <a class="text-white me-3" href="#invoice">FACTUSYSTEM</a>
-                        <a class="text-white me-3" href="#rentcar">RENTCAR</a>
-                        <a class="text-white me-3" href="#yojaDrink">DRINK</a>
-                        <a class="text-white me-3" href="#broncoTech">BRONCO TECH</a>
-                        <a class="text-white me-3" href="#discreteMath">CALCULADORA BINARIA</a>
+                    <div class="d-flex flex-column flex-md-row">
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="index.html">SOBRE MI</a>
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="#toro">TORO</a>
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="#invoice">FACTUSYSTEM</a>
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="#rentcar">RENTCAR</a>
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="#yojaDrink">DRINK</a>
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="#broncoTech">BRONCO TECH</a>
+                        <a class="text-white mb-2 mb-md-0 me-md-3" href="#discreteMath">CALCULADORA BINARIA</a>
                     </div>
                 </div>
             </div>
@@ -49,11 +50,12 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="toro">
         <div class="w-100">
+          <div class="bg-dark bg-opacity-50 rounded-4 p-4 backdrop-blur">
             <h2 class="mb-3 fw-bold text-uppercase">Toro</h2>
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
                 <div class="resume-content">
                     <h3 class="mb-0">Registro Ganadero</h3>
-                    <div class="text-muted h5 mb-3">Blazor Server, .NET 7.0, SQL Server, Entity Framework Core 7.0</div>
+                    <div class="text-info mb-3">Blazor Server, .NET 7.0, SQL Server, Entity Framework Core 7.0</div>
                     <p class="lead">
                         Este programa representa una solución integral de gestión de inventario diseñada específicamente 
                         para ganaderías. Ofrece una amplia gama de funcionalidades que facilitan el control y la 
@@ -67,16 +69,15 @@
                         <li>Facturación de Ventas</li>
                     </ul>
                     <div>
-                        <a class="btn btn-outline-dark btn-lg" href="https://github.com/MarcosDVS/TORO.git" target="_blank">
+                        <a class="btn btn-outline-light btn-lg" href="https://github.com/MarcosDVS/TORO.git" target="_blank">
                             <i class="bi bi-github me-2"></i> Ver en GitHub
                         </a>
                     </div>
                 </div>
-                <div class="resume-date text-md-right text-muted">
-                    <span class="text-primary">Octubre - Diciembre 2023</span>
+                <div class="text-md-end">
+                    <span class="badge bg-info">Octubre - Diciembre 2023</span>
                 </div>
             </div>
-    
             <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -118,6 +119,7 @@
                     <!-- Añade más imágenes según sea necesario -->
                 </div>
             </div>
+          </div>
         </div>
       </section>
     
@@ -125,12 +127,13 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="invoice">
             <div class="w-100">
+              <div class="bg-dark bg-opacity-50 rounded-4 p-4 backdrop-blur">
                 <h2 class="mb-5 fw-bold">FactuSystem</h2>
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
                   <div class="resume-content">
                       <h3 class="mb-0">SISTEMA DE FACTURACIÓN</h3>
-                      <div class="text-muted h5 mb-3">BLAZOR SERVER, .NET6.0, SQLSERVER, ENTITYFRAMEWORKCORE 6.0</div>
+                      <div class="text-info mb-3">BLAZOR SERVER, .NET6.0, SQLSERVER, ENTITYFRAMEWORKCORE 6.0</div>
                       <p class="lead">
                           Este programa mejora apticamente el funcionamiento de este Liquor Store. Los aspectos destacados 
                           incluyen:
@@ -142,13 +145,13 @@
                           <li>Facturación de Ventas</li>
                       </ul>
                       <div>
-                        <a class="btn btn-outline-dark btn-lg" href="https://github.com/MarcosDVS/FactuSystem.git" target="_blank">
+                        <a class="btn btn-outline-light btn-lg" href="https://github.com/MarcosDVS/FactuSystem.git" target="_blank">
                             <i class="bi bi-github me-2"></i> Ver en GitHub
                         </a>
                       </div>
                   </div>
-                  <div class="resume-date text-md-right">
-                      <span class="text-primary">Enero - Marzo 2024</span>
+                  <div class="text-md-end">
+                      <span class="badge bg-info">Enero - Marzo 2024</span>
                   </div>
                 </div>
                 
@@ -209,7 +212,7 @@
                         </div>
                       </div>
                 </div>
-
+              </div>
             </div>
         </section>
 
@@ -217,12 +220,13 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="rentcar">
           <div class="w-100">
+            <div class="bg-dark bg-opacity-50 rounded-4 p-4 backdrop-blur">
               <h2 class="mb-5 fw-bold">RENTCAR</h2>
 
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
                 <div class="resume-content">
                     <h3 class="mb-0">RENTA DE VEHÍCULOS</h3>
-                    <div class="text-muted h5 mb-3">BLAZOR SERVER, .NET7.0, SQLITE, ENTITYFRAMEWORKCORE 7.0</div>
+                    <div class="text-info mb-3">BLAZOR SERVER, .NET7.0, SQLITE, ENTITYFRAMEWORKCORE 7.0</div>
                     <p class="lead">
                         Este programa mejora apticamente el funcionamiento de este RentCar. Los aspectos destacados 
                         incluyen: 
@@ -234,13 +238,13 @@
                         <li>Facturación de Ventas</li>
                     </ul>
                     <div>
-                      <a class="btn btn-outline-dark btn-lg" href="https://github.com/MarcosDVS/RentCar.git" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://github.com/MarcosDVS/RentCar.git" target="_blank">
                           <i class="bi bi-github me-2"></i> Ver en GitHub
                       </a>
                     </div>
                 </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">Enero - Marzo 2024</span>
+                <div class="text-md-end">
+                    <span class="badge bg-info">Enero - Marzo 2024</span>
                 </div>
               </div>
               
@@ -256,7 +260,7 @@
                       </div>
                     </div>
               </div>
-
+            </div>
           </div>
         </section>
 
@@ -264,12 +268,13 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="yojaDrink">
           <div class="w-100">
+            <div class="bg-dark bg-opacity-50 rounded-4 p-4 backdrop-blur">
               <h2 class="mb-5 fw-bold">YOJA'S DRINKS</h2>
 
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
                 <div class="resume-content">
                     <h3 class="mb-0">SITIO WEB YOJA'S DRINKS</h3>
-                    <div class="text-muted h5 mb-3">HTML, CSS, BOOTSTRAP</div>
+                    <div class="text-info mb-3">HTML, CSS, BOOTSTRAP</div>
                     <p class="lead">
                         Sitio web promocional diseñado para dar a conocer Yoja's Drinks & Heladería Los Pasos, 
                         una tienda de licores y heladería. El sitio presenta los diversos servicios que ofrece 
@@ -282,18 +287,19 @@
                         <li>Ubicación del Local</li>
                     </ul>
                     <div>
-                      <a class="btn btn-outline-dark btn-lg" href="https://marcosdvs.github.io/YojaDrinkWeb/" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://marcosdvs.github.io/YojaDrinkWeb/" target="_blank">
                         <i class="bi bi-globe me-2"></i> Visitar Web
                       </a>
-                      <a class="btn btn-outline-dark btn-lg" href="https://github.com/MarcosDVS/YojaDrinkApi.git" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://github.com/MarcosDVS/YojaDrinkApi.git" target="_blank">
                         <i class="bi bi-github me-2"></i> Ver en GitHub
                       </a>
                     </div>
                 </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">2022</span>
+                <div class="text-md-end">
+                    <span class="badge bg-info">2022</span>
                 </div>
               </div>
+            </div>
           </div>
         </section>
 
@@ -301,12 +307,13 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="broncoTech">
           <div class="w-100">
+            <div class="bg-dark bg-opacity-50 rounded-4 p-4 backdrop-blur">
               <h2 class="mb-5 fw-bold">EL BRONCO TECH</h2>
 
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
                 <div class="resume-content">
                     <h3 class="mb-0">SITIO WEB EL BRONCO TECH</h3>
-                    <div class="text-muted h5 mb-3">HTML, CSS, BOOTSTRAP</div>
+                    <div class="text-info mb-3">HTML, CSS, BOOTSTRAP</div>
                     <p class="lead">
                         Sitio web  diseñado para dar a conocer EL BRONCO TECH, 
                         una tienda de equipos de computación. El sitio presenta los diversos servicios que ofrece 
@@ -319,18 +326,19 @@
                         <li>Ubicación del Local</li>
                     </ul>
                     <div>
-                      <a class="btn btn-outline-dark btn-lg" href="https://marcosdvs.github.io/ElBroncoTECH/" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://marcosdvs.github.io/ElBroncoTECH/" target="_blank">
                         <i class="bi bi-globe me-2"></i> Visitar Web
                       </a>
-                      <a class="btn btn-outline-dark btn-lg" href="https://github.com/MarcosDVS/ElBroncoTECH.git" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://github.com/MarcosDVS/ElBroncoTECH.git" target="_blank">
                         <i class="bi bi-github me-2"></i> Ver en GitHub
                       </a>
                     </div>
                 </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">2024</span>
+                <div class="text-md-end">
+                    <span class="badge bg-info">2024</span>
                 </div>
               </div>
+            </div>
           </div>
         </section>
 
@@ -338,12 +346,13 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="discreteMath">
           <div class="w-100">
+            <div class="bg-dark bg-opacity-50 rounded-4 p-4 backdrop-blur">
               <h2 class="mb-5 fw-bold">CALCULADORA BINARIA</h2>
 
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
                 <div class="resume-content">
                     <h3 class="mb-0">SITIO WEB</h3>
-                    <div class="text-muted h5 mb-3">HTML, CSS, BOOTSTRAP, JAVASCRIPT</div>
+                    <div class="text-info mb-3">HTML, CSS, BOOTSTRAP, JAVASCRIPT</div>
                     <p class="lead">
                         Durante mi curso de Matemática Discreta, desarrollé esta herramienta para facilitar
                         las conversiones entre diferentes sistemas numéricos. Esta calculadora permite realizar
@@ -356,18 +365,19 @@
                         <li>Representación en 32 y 64 bits</li>
                     </ul>
                     <div>
-                      <a class="btn btn-outline-dark btn-lg" href="https://marcosdvs.github.io/DiscreteMath/" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://marcosdvs.github.io/DiscreteMath/" target="_blank">
                         <i class="bi bi-globe me-2"></i> Visitar Web
                       </a>
-                      <a class="btn btn-outline-dark btn-lg" href="https://github.com/MarcosDVS/DiscreteMath.git" target="_blank">
+                      <a class="btn btn-outline-light btn-lg" href="https://github.com/MarcosDVS/DiscreteMath.git" target="_blank">
                         <i class="bi bi-github me-2"></i> Ver en GitHub
                       </a>
                     </div>
                 </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">2024</span>
+                <div class="text-md-end">
+                    <span class="badge bg-info">2024</span>
                 </div>
               </div>
+            </div>
           </div>
         </section>
     </div>
