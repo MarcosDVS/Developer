@@ -1,0 +1,13 @@
+:root {
+    --bs-body-bg: #111827;
+    --bs-body-color: #e5e7eb;
+}
+
+body {
+    background: linear-gradient(to bottom, #111827, #1f2937);
+}
+.hover-effect:hover {
+    color: var(--bs-info) !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
